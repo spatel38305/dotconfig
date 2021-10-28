@@ -25,3 +25,13 @@ setopt longlistjobs     # Show more information about jobs
 setopt pushdtohome      # pushd goes to $HOME if nothing else is given
 setopt noflowcontrol    # Disables ^S/^Q in line-edit mode
 export DISPLAY=localhost:0.0
+
+setopt interactivecomments
+
+export LC_ALL=C
+
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line
+bindkey "^[[3~" delete-char
+bindkey "^[OH" beginning-of-line
+bindkey "^[OF" end-of-line

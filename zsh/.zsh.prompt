@@ -1,0 +1,69 @@
+##################################################################
+#
+#         .zsh_files/.zsh.prompt file
+#
+#         Read in every time a new interactive zsh is started.
+#         Use it to define your own prompt or choose from several
+#         predefined prompts in here.
+#
+##################################################################
+
+# Color shortcuts
+  RED='%{[0;31m%}'
+  LIGHTRED='%{[1;31m%}'
+
+  GREEN='%{[0;32m%}'
+  LIGHTGREEN='%{[1;32m%}'
+
+  YELLOW='%{[0;33m%}'
+  LIGHTYELLOW='%{[1;33m%}'
+
+  BLUE='%{[0;34m%}'
+  LIGHTBLUE='%{[1;34m%}'
+
+  PURPLE='%{[0;35m%}'
+  LIGHTPURPLE='%{[1;35m%}'
+
+  CYAN='%{[0;36m%}'
+  LIGHTCYAN='%{[1;36m%}'
+
+  GRAY='%{[1;30m%}'
+  LIGHTGRAY='%{[0;37m%}'
+
+  NOCOLOR='%{[0m%}'
+
+  ARED='[0;31m'
+  ANOCOLOR='[0;0m'
+  AGREEN='[0;32m'
+  ABLUE='[0;34m'
+  ACYAN='[0;36'
+  APURPLE='[0;35m'
+
+
+#Set my prompt (have only one prompt version uncommented)
+
+# Prompt version 1
+#  RPROMPT="$ORANGE [%T] $GRAY $NOCOLOR"
+#  PROMPT="$GRAY%n$RED|$GREEN%m$RED|$CYAN%~ $GRAY> $GRAY"
+
+# Prompt version 2
+  RPROMPT="$GRAY$CYAN<- %t$LIGHTGRAY"
+  PROMPT="$LIGHTRED%n$CYAN:$LIGHTRED%m $LIGHTGRAY%~$CYAN> $NOCOLOR"
+
+# same prompt as above, except uses no colors
+  #RPROMPT="<- %t"
+  #PROMPT="%n:%m %~> "
+
+# Prompt version 3
+#  RPROMPT="$NOCOLOR $GRAY|$LIGHTGREEN %~$NOCOLOR"
+#  PROMPT="$GREEN(%m$CYAN:$GREEN%y) $LIGHTBLUE%* $RED $LIGHTGRAY%# $NOCOLOR"
+
+# a very simple prompt
+#  RPROMPT=""
+#  PROMPT="UNIX> "
+
+
+export PROMPT
+export RPROMPT
+#export PS1="\[\e[0;32m\]\t\[\e[0m\] \[\e[0;31m\]\u@\h\[\e[0m\] \[\e[0;34m\]\w\[\e[0m\]> "
+export PROMPT="$GREEN%n$NOCOLOR@$RED%m$NOCOLOR $BLUE%~$CYAN> $NOCOLOR"

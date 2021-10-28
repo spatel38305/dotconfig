@@ -1,0 +1,25 @@
+##################################################################
+#
+#         .zsh_files/.zsh.path file
+#
+#         Read in every time a new interactive zsh is started.
+#         Use it to append to your PATH or redefine it. PATH is
+#         now globally set in /etc/zshrc.
+#
+##################################################################
+
+# here is where you can append to it, or change it
+# For example, to add /mydir/bin to your path, you could add:
+# export PATH="$PATH:/mydir/bin"
+
+#Uncomment the line below to use mpich
+#export PATH="$PATH:/usr/local/mpich/mpich-gcc/bin"
+
+#Uncomment the line below to use lam-mpi
+#export PATH="$PATH:/usr/local/lam-mpi/lam-mpi-gcc/bin"
+
+#Uncomment the line below to use GNU ARM
+##export PATH="$PATH:/usr/local/gnuarm/bin"
+export PATH=$PATH:~/programs/cpp
+export PATH=$PATH:~/programs/C
+export PATH=$PATH:.

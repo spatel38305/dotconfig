@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/spatel84/cs483programming2/cs483-pa2-instrumentornamentfall/assignment2'
+let g:netrw_dirhist_2='/home/spatel84/test'
+let g:netrw_dirhist_3='/home/spatel84/git/cs360/labs/lab1'

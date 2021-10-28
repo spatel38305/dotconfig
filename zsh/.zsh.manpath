@@ -1,0 +1,12 @@
+##################################################################
+#
+#         .zsh_files/.zsh.manpath file
+#
+#         Read in every time a new interactive zsh is started.
+#         Use it to append to your MANPATH or redefine it. MANPATH
+#         is now globally set in /etc/zshrc.
+#
+##################################################################
+
+# the MANPATH is set globally in /etc/zshrc
+# if you want to change it, do it here (don't forget to export it)

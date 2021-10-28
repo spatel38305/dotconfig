@@ -1,0 +1,217 @@
+##################################################################
+#
+#         .zsh_files/.zsh.aliases file
+#
+#         Read in every time a new interactive zsh is started.
+#         Defines some useful aliases.
+#
+##################################################################
+
+alias RM='rm -f'
+
+alias c='clear'
+alias ls="ls --color=auto -F -la" # color ls is cool
+alias la="ls -la"
+alias ll="ls -lh"
+alias lla="ls -lah"
+alias view="vim -R"
+alias l='less'
+alias ..="cd .."
+alias cd..="cd .."
+alias ping="ping -c 5"
+alias CD="cd"
+alias l="ll"
+alias lll="ll"
+alias wcl="wc -l"
+
+alias del='del'
+function del()
+{
+	mv "$1" ~/recyclingbin
+}
+
+alias out="out"
+function out()
+{
+	echo "diff -y tmp-`printf "%03d" "$1"`-test-stdout.txt tmp-`printf "%03d" "$1"`correct-stdout.txt"
+	diff -y tmp-`printf "%03d" "$1"`-test-stdout.txt tmp-`printf "%03d" "$1"`-correct-stdout.txt
+}
+
+alias err="err"
+function err()
+{
+	echo "diff -y tmp-`printf "%03d" "$1"`-test-stderr.txt tmp-`printf "%03d" "$1"`-correct-stderr.txt"
+	diff -y tmp-`printf "%03d" "$1"`-test-stderr.txt tmp-`printf "%03d" "$1"`-correct-stderr.txt
+}
+
+alias vout="vout"
+function vout()
+{
+	echo "vimdiff tmp-`printf "%03d" "$1"`-test-stdout.txt tmp-`printf "%03d" "$1"`-correct-stdout.txt"
+	vimdiff tmp-`printf "%03d" "$1"`-test-stdout.txt tmp-`printf "%03d" "$1"`-correct-stdout.txt
+}
+
+alias verr="verr"
+function verr()
+{
+	echo "vimdiff tmp-`printf "%03d" "$1"`-test-stderr.txt tmp-`printf "%03d" "$1"`-correct-stderr.txt"
+	vimdiff tmp-`printf "%03d" "$1"`-test-stderr.txt tmp-`printf "%03d" "$1"`-correct-stderr.txt
+}
+
+alias sshh="sshh"
+function sshh()
+{
+	echo "ssh -X -Y -i ~/.ssh/crypto spatel84@hydra$1.eecs.utk.edu" 
+	ssh -X -Y -i ~/.ssh/crypto spatel84@hydra"$1".eecs.utk.edu
+}
+
+alias ssht="ssht"
+function ssht()
+{
+	echo "ssh -X -Y -i ~/.ssh/crypto spatel84@tesla$1.eecs.utk.edu"
+	ssh -X -Y -i ~/.ssh/crypto spatel84@tesla"$1".eecs.utk.edu
+}
+
+alias sshe="sshe"
+function sshe()
+{
+	echo "ssh -X -Y spatel84@ecuador.eecs.utk.edu"
+	ssh -X -Y spatel84@ecuador.eecs.utk.edu
+}
+
+alias sshu="sshu"
+function sshu()
+{
+	echo "ssh -X -Y spatel84@uruguay.eecs.utk.edu"
+	ssh -X -Y spatel84@uruguay.eecs.utk.edu
+}
+
+alias sftph="sftph"
+function sftph()
+{
+	echo "sftp spatel84@hydra$1.eecs.utk.edu"
+	sftp spatel84@hydra"$1".eecs.utk.edu
+}
+
+alias sftpt="sftpt"
+function sftpt()
+{
+	echo "sftp spatel84@tesla$1.eecs.utk.edu"
+	sftp spatel84@tesla"$1".eecs.utk.edu
+}
+
+alias sftpe="sftpe"
+function sftpe()
+{
+	echo "sftp spatel84@ecuador.eecs.utk.edu"
+	sftp spatel84@ecuador.eecs.utk.edu
+}
+
+alias sftpu="sftpu"
+function sftpu()
+{
+	echo "sftp spatel84@uruguay.eecs.utk.edu"
+	sftp spatel84@uruguay.eecs.utk.edu
+}
+
+alias sshp="sshp"
+function sshp()
+{
+    echo "ssh Shivam@DESKTOP-2AVUPNL"
+    ssh Shivam@DESKTOP-2AVUPNL
+}
+
+alias sftpp="sftpp"
+function sftpp()
+{
+    echo "sftp Shivam@DESKTOP-2AVUPNL"
+    sftp Shivam@DESKTOP-2AVUPNL
+}
+
+alias sshpi="sshpi"
+function sshpi()
+{
+    echo "ssh pi@10.0.0.174"
+    ssh pi@10.0.0.174
+}
+
+alias sftppi="sftppi"
+function sftppi()
+{
+    echo "sftp pi@10.0.0.174"
+    sftp pi@10.0.0.174
+}
+
+alias rmtmp="rmtmp"
+function rmtmp()
+{
+    echo "rm tmp*"
+    rm tmp*
+}
+
+alias explore="explore"
+function explore()
+{
+    explorer.exe .
+}
+
+alias g="gradescript"
+alias ga="gradeall"
+
+alias m="make"
+alias 102="cd ~/git/cs102"
+alias 130="cd ~/git/cs130"
+alias 140="cd ~/git/cs140"
+alias 307="cd ~/git/cs307"
+alias 360="cd ~/git/cs360"
+alias 361="cd ~/git/cs361"
+alias 365="cd ~/cs365"
+alias 370="cd ~/cs370"
+alias 466="cd ~/cs466"
+alias 483="cd ~/git/cs483"
+alias 366="cd ~/git/cs366"
+alias 425="cd ~/git/cs425"
+alias 594="cd ~/git/cs594"
+alias 565="cd ~/git/cs565"
+alias 581="cd ~/git/cs581"
+alias 462="cd ~/git/cs462/hw20"
+alias 530="cd ~/git/cs530"
+alias 545="cd ~/git/cs545"
+alias 556="cd ~/git/cs556/ecstatic_chebyshev"
+alias practice="cd ~/git/practice"
+alias labs='cd `pwd`/labs'
+alias lab0='cd `pwd`/lab0'
+alias lab1='cd `pwd`/lab1'
+alias lab2='cd `pwd`/lab2'
+alias lab3='cd `pwd`/lab3'
+alias lab4='cd `pwd`/lab4'
+alias lab5='cd `pwd`/lab5'
+alias lab6='cd `pwd`/lab6'
+alias lab7='cd `pwd`/lab7'
+alias lab8='cd `pwd`/lab8'
+alias lab9='cd `pwd`/lab9'
+alias lab10='cd `pwd`/lab10'
+alias hw1='cd `pwd`/hw1'
+alias hw2='cd `pwd`/hw2'
+alias hw3='cd `pwd`/hw3'
+alias hw4='cd `pwd`/hw4'
+alias hw5='cd `pwd`/hw5'
+alias hw6='cd `pwd`/hw6'
+alias hw7='cd `pwd`/hw7'
+alias hw8='cd `pwd`/hw8'
+alias hw9='cd `pwd`/hw9'
+alias hw10='cd `pwd`/hw10'
+
+alias programs="cd ~/programs"
+alias program="programs"
+alias C="cd ~/programs/c"
+alias cpp="cd ~/programs/cpp"
+alias shell="cd ~/programs/shell"
+alias Python="cd ~/programs/python"
+
+alias gitps="git push"
+alias gitc="git commit -m"
+alias gits="git status"
+alias gita="git add -u ."
+alias gitpl="git pull"
+alias cdg="cd ~/git"

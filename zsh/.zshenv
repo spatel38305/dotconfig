@@ -15,8 +15,6 @@ export VISUAL=vim
 export LESS='-emiSRX'
 export PAGER=less
 
-umask 077
-
 # Don't have the shell check for mail
 unset MAIL         
 

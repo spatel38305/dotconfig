@@ -57,3 +57,7 @@ set mouse=a
 :autocmd BufNewFile *.cpp 0r ~/.vim/templates/template.cpp
 :autocmd BufNewFile *.sh 0r ~/.vim/templates/template.sh
 :autocmd BufNewFile *.py 0r ~/.vim/templates/template.py
+
+set cursorline
+set encoding=utf-8
+

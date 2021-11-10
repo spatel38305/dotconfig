@@ -34,5 +34,5 @@ bindkey "^[[3~" delete-char
 bindkey "^[OH" beginning-of-line
 bindkey "^[OF" end-of-line
 
-export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolve.conf 2> /dev/null ):0
+export DISPLAY="$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}')":0.0
 export LIBGL_ALWAYS_INDIRECT=1

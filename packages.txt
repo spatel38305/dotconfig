@@ -1,0 +1,17 @@
+build-essential
+clang
+cmake
+exuberant-ctags
+gdb
+git
+htop
+make
+man-db
+python3
+python3-pip
+sudo
+tar
+tmux
+vim
+wget
+zsh

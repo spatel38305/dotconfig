@@ -22,4 +22,6 @@
 ##export PATH="$PATH:/usr/local/gnuarm/bin"
 export PATH=$PATH:~/programs/cpp
 export PATH=$PATH:~/programs/C
+export PATH=$PATH:~/programs/python
+export PATH=$PATH:~/programs/shell
 export PATH=$PATH:.

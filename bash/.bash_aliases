@@ -1,12 +1,3 @@
-##################################################################
-#
-#         .zsh_files/.zsh.aliases file
-#
-#         Read in every time a new interactive zsh is started.
-#         Defines some useful aliases.
-#
-##################################################################
-
 alias RM='rm -f'
 
 alias c='clear'

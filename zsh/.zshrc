@@ -34,5 +34,5 @@ bindkey "^[[3~" delete-char
 bindkey "^[OH" beginning-of-line
 bindkey "^[OF" end-of-line
 
-export DISPLAY=$(awk '/nameserver / {print $2; exit}'):0
-export LIBGL_ALWAYS_INDIRECT=1
+export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolve.conf 2> /dev/null ):0
+xport LIBGL_ALWAYS_INDIRECT=1

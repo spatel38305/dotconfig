@@ -33,3 +33,6 @@ bindkey "^[[4~" end-of-line
 bindkey "^[[3~" delete-char
 bindkey "^[OH" beginning-of-line
 bindkey "^[OF" end-of-line
+
+export DISPLAY=$(awk '/nameserver / {print $2; exit}'):0
+export LIBGL_ALWAYS_INDIRECT=1

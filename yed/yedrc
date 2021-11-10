@@ -50,7 +50,7 @@ vimish-bind normal  "1"                     cursor-buffer-begin
 vimish-bind normal  "9"                     cursor-buffer-end
 vimish-bind normal  "0"                     command-prompt "cursor-line "
 vimish-bind normal  "n"                     find-next-in-buffer
-vimish-bind normal  "p"                     find-prev-in-buffer
+vimish-bind normal  "b"                     find-prev-in-buffer
 vimish-bind normal  "ctrl-f"                command-prompt "find-in-buffer "
 alias               "x"                     wq
 alias               "build"                 builder-start

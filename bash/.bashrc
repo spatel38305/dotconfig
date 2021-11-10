@@ -117,3 +117,8 @@ if ! shopt -oq posix; then
 fi
 
 source "$HOME/.bash_aliases"
+export PATH=$PATH:~/programs/cpp
+export PATH=$PATH:~/programs/c
+export PATH=$PATH:~/programs/python
+export PATH=$PATH:~/programs/shell
+export PATH=$PATH:.

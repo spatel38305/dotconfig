@@ -1,0 +1,62 @@
+###############################################################
+#   Shivam Patel
+#   yedrc
+###############################################################
+
+### @plugins ###
+plugin-load "ypm"
+
+### @style ###
+set truecolor "yes"
+plugin-load "styles/casey"
+style casey
+
+### @variables ###
+set tab-width                           4
+set cursor-line                         "yes"
+set vimish-insert-no-cursor-line        "yes"
+set cursor-word-hl-idle-threshold-ms    500
+set status-line-center                  "%(vimish-mode)"
+set use-ctags                           "no"
+set disable-auto-quote                  "yes"
+set disable-auto-dquote                 "yes"
+set disable-auto-paren                  "yes"
+
+### @keybindings ###
+vimish-bind normal  "ctrl-/"                comment-toggle
+vimish-bind normal  "ctrl-{"                brace-goto-other
+vimish-bind normal  "ctrl-}"                brace-goto-other
+vimish-bind normal  ">"                     indent
+vimish-bind normal  "<"                     unindent
+vimish-bind normal  "ctrl-z"                undo
+vimish-bind normal  "ctrl-y"                redo
+vimish-bind normal  "spc f"                 find-file
+vimish-bind normal  "spc g"                 grep
+vimish-bind normal  "ctrl-|"                frame-vsplit
+vimish-bind normal  "ctrl-i"                frame-hsplit
+vimish-bind normal  "."                     frame-next
+vimish-bind normal  ","                     frame-prev
+vimish-bind normal  "]"                     buffer-next
+vimish-bind normal  "["                     buffer-prev
+vimish-bind normal  "ctrl-w"                frame-delete
+vimish-bind normal  "ctrl-t"                frame-new
+vimish-bind normal  "ctrl-d"                multi buffer-delete buffer-next
+vimish-bind normal  "ctrl-s"                write-buffer
+vimish-bind normal  "ctrl-n"                command-prompt "buffer "
+vimish-bind normal  "ctrl-r"                redraw
+vimish-bind normal  "'"                     cursor-next-word
+vimish-bind normal  ";"                     cursor-prev-word
+vimish-bind normal  "1"                     cursor-buffer-begin
+vimish-bind normal  "9"                     cursor-buffer-end
+vimish-bind normal  "0"                     command-prompt "cursor-line "
+vimish-bind normal  "n"                     find-next-in-buffer
+vimish-bind normal  "p"                     find-prev-in-buffer
+vimish-bind normal  "ctrl-f"                command-prompt "find-in-buffer "
+alias               "x"                     wq
+alias               "build"                 builder-start
+alias               "make"                  "builder-start
+alias               "m"                     builder-start
+alias               "replace"               replace-current-search
+
+### @project ###
+yedrc-load ".yedrc"

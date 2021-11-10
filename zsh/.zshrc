@@ -12,8 +12,6 @@ source $HOME/.zsh.aliases  # setup command aliases
 
 bindkey -d
 
-umask 077
-
 # Turn off core dumps
 limit coredumpsize 0
 

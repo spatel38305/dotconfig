@@ -56,7 +56,7 @@ vimish-bind normal  "r"                     reload
 vimish-bind normal  "Z Z"                   wq
 alias               "x"                     wq
 alias               "build"                 builder-start
-alias               "make"                  "builder-start
+alias               "make"                  builder-start
 alias               "m"                     builder-start
 alias               "replace"               replace-current-search
 

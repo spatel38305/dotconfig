@@ -33,7 +33,7 @@ vimish-bind normal  "ctrl-y"                redo
 vimish-bind normal  "spc f"                 find-file
 vimish-bind normal  "spc g"                 grep
 vimish-bind normal  "ctrl-|"                frame-vsplit
-vimish-bind normal  "ctrl-i"                frame-hsplit
+vimish-bind normal  "meta--"                frame-hsplit
 vimish-bind normal  "."                     frame-next
 vimish-bind normal  ","                     frame-prev
 vimish-bind normal  "]"                     buffer-next
@@ -52,6 +52,8 @@ vimish-bind normal  "0"                     command-prompt "cursor-line "
 vimish-bind normal  "n"                     find-next-in-buffer
 vimish-bind normal  "b"                     find-prev-in-buffer
 vimish-bind normal  "ctrl-f"                command-prompt "find-in-buffer "
+vimish-bind normal  "r"                     reload
+vimish-bind normal  "Z Z"                   wq
 alias               "x"                     wq
 alias               "build"                 builder-start
 alias               "make"                  "builder-start

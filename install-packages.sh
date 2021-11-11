@@ -22,7 +22,7 @@ packages="$( cat packages.txt | sort -u | xargs )"
 
 echo "Installing: $packages"
 
-sudo apt install -y "$packages"
+xargs -0 -n 1 sudo apt install -y < <( tr \\n \\0 < packages.txt )
 
 if ! command -v zsh &> /dev/null; then
     echo "No zsh. Rip. :("

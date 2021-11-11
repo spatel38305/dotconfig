@@ -18,7 +18,7 @@ else
     echo "I can apt!"
 fi
 
-packagesVersion="$( cat "$DIR/packages/.spatel.packages" | xargs )"
+packagesVersion="$( cat "$DIR/.spatel.packages" | xargs )"
 echo "packages version: $packagesVersion"
 
 packages="$( cat packages.txt | sort -u | xargs )"

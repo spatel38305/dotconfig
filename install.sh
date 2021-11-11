@@ -167,11 +167,13 @@ fi
 if [ -f "$HOME/.config/.spatel.packages" ]; then
     updateFiles="$( diff "$DIR/.spatel.packages" "$HOME/.config/.spatel.packages" | wc -l )"
     if [ "$updateFiles" -ne 0 ]; then
+        cp "$DIR/.spatel.packages" "$HOME/.config/.spatel.packages"
         ./install-packages.sh
     else
         echo "packages are up to date. Skipping. . ."
     fi
 else
+    cp "$DIR/.spatel.packages" "$HOME/.config/.spatel.packages"
     ./install-packages.sh
 fi
 

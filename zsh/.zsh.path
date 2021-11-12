@@ -20,6 +20,7 @@
 
 #Uncomment the line below to use GNU ARM
 ##export PATH="$PATH:/usr/local/gnuarm/bin"
+export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/programs/cpp
 export PATH=$PATH:~/programs/c
 export PATH=$PATH:~/programs/python

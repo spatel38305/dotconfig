@@ -37,6 +37,6 @@ bindkey "^[OF" end-of-line
 export DISPLAY="$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}')":0.0
 export LIBGL_ALWAYS_INDIRECT=1
 
-if [ ! -f "$HOME/dotconfig/update.sh" ]; then
+if [ -f "$HOME/dotconfig/update.sh" ]; then
     bash "$HOME/dotconfig/update.sh"
 fi

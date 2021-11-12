@@ -2,12 +2,13 @@
 #   Shivam Patel
 #   yedrc
 ###############################################################
+### @truecolor ###
+set truecolor "yes"
 
 ### @plugins ###
 plugin-load "ypm"
 
 ### @style ###
-set truecolor "yes"
 plugin-load "styles/casey"
 style casey
 
@@ -16,6 +17,7 @@ set tab-width                           4
 set cursor-line                         "yes"
 set vimish-insert-no-cursor-line        "yes"
 set cursor-word-hl-idle-threshold-ms    500
+set cursor-move-clears-search           "no"
 set status-line-center                  "%(vimish-mode)"
 set use-ctags                           "no"
 set disable-auto-quote                  "yes"
@@ -24,8 +26,8 @@ set disable-auto-paren                  "yes"
 
 ### @keybindings ###
 vimish-bind normal  "ctrl-/"                comment-toggle
-vimish-bind normal  "ctrl-{"                brace-goto-other
-vimish-bind normal  "ctrl-}"                brace-goto-other
+vimish-bind normal  "{"                     brace-goto-other
+vimish-bind normal  "}"                     brace-goto-other
 vimish-bind normal  ">"                     indent
 vimish-bind normal  "<"                     unindent
 vimish-bind normal  "ctrl-z"                undo
@@ -55,11 +57,15 @@ vimish-bind normal  "ctrl-f"                command-prompt "find-in-buffer "
 vimish-bind normal  "r"                     reload
 vimish-bind normal  "Z Z"                   wq
 vimish-bind normal  "W W"                   q
+vimish-bind normal  "ctrl-q"                suspend
+vimish-bind normal  "tab"                   go-menu
 alias               "x"                     wq
 alias               "build"                 builder-start
 alias               "make"                  builder-start
 alias               "m"                     builder-start
 alias               "replace"               replace-current-search
+alias               "q!"                    no-confirm-quit
+alias               "ypm"                   ypm-menu
 
 ### @project ###
 yedrc-load ".yedrc"

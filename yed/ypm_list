@@ -6,12 +6,13 @@ align
 autotrim
 calc
 comment
-completer
+confirm-quit
 convert
 ctags
 cursor_word_hl
 find_bracket
 find_file
+fstyle
 git_variables
 go_menu
 grep

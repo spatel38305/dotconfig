@@ -27,6 +27,10 @@ else
     ./install -p "$HOME/.local"
 fi
 
+cd ~/.config/yed
+
+./build_init.sh
+
 if ! command -v yed &> /dev/null; then
     echo "No yed. Rip. :("
 else

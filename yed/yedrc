@@ -6,7 +6,6 @@
 set truecolor "yes"
 
 ### @plugins ###
-plugins-add-dir ~/.local/lib/yed/plugins
 plugin-load "ypm"
 
 ### @style ###

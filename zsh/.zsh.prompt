@@ -66,4 +66,4 @@
 export PROMPT
 export RPROMPT
 #export PS1="\[\e[0;32m\]\t\[\e[0m\] \[\e[0;31m\]\u@\h\[\e[0m\] \[\e[0;34m\]\w\[\e[0m\]> "
-export PROMPT="$GREEN%n$NOCOLOR@$RED%m$NOCOLOR $BLUE%~$CYAN> $NOCOLOR"
+export PROMPT="$GREEN%n$NOCOLOR@$RED%m$NOCOLOR $CYAN%~$BLUE> $NOCOLOR"

@@ -77,6 +77,20 @@ function sshu()
 	ssh uruguay
 }
 
+alias sshin="sshin"
+function sshin()
+{
+	echo "ssh india"
+	ssh india
+}
+
+alias sshit="sshit"
+function sshit()
+{
+	echo "ssh italy"
+	ssh italy
+}
+
 alias sftph="sftph"
 function sftph()
 {
@@ -105,6 +119,20 @@ function sftpu()
 	sftp uruguay
 }
 
+alias sftpin="sftpin"
+function sftpin()
+{
+    echo "sftp india"
+    sftp india
+}
+
+alias sftpit="sftpit"
+function sftpit()
+{
+    echo "sftp italy"
+    sftp italy
+}
+
 alias sshpi="sshpi"
 function sshpi()
 {
@@ -117,6 +145,20 @@ function sftppi()
 {
     echo "sftp pi"
     sftp pi
+}
+
+alias sshpc="sshpc"
+function sshpc()
+{
+	echo "ssh pc"
+	ssh pc
+}
+
+alias sftppc="sftppc"
+function sftppc()
+{
+    echo "sftp pc"
+    sftp pc
 }
 
 alias rmtmp="rmtmp"

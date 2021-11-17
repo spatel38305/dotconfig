@@ -14,6 +14,11 @@ alias CD="cd"
 alias l="ll"
 alias lll="ll"
 alias wcl="wc -l"
+alias bim="vim"
+alias cim="vim"
+alias ted="yed"
+
+alias cdd="cd ~/dotconfig"
 
 alias del='del'
 function del()

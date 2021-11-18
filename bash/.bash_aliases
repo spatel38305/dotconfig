@@ -13,6 +13,7 @@ alias ping="ping -c 5"
 alias CD="cd"
 alias l="ll"
 alias lll="ll"
+alias k="ll"
 alias wcl="wc -l"
 alias bim="vim"
 alias cim="vim"
@@ -57,7 +58,7 @@ function verr()
 alias sshh="sshh"
 function sshh()
 {
-	echo "ssh hydra$1" 
+	echo "ssh hydra$1"
 	ssh "hydra$1"
 }
 

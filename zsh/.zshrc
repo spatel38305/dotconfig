@@ -40,3 +40,8 @@ export LIBGL_ALWAYS_INDIRECT=1
 if [ -f "$HOME/dotconfig/update.sh" ]; then
     bash "$HOME/dotconfig/update.sh"
 fi
+
+if [[ -z "${SSH_AUTH_SOCK}" ]]; then
+    eval `ssh-agent -s` &> /dev/null
+    trap 'test -n "$SSH_AGENT_PID" && eval `/usr/bin/ssh-agent -k`' 0
+fi

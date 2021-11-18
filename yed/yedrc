@@ -23,6 +23,7 @@ set use-ctags                           "no"
 set disable-auto-quote                  "yes"
 set disable-auto-dquote                 "yes"
 set disable-auto-paren                  "yes"
+set go-menu-persistent-items            "~/.config/yed/yedrc"
 
 ### @keybindings ###
 vimish-bind normal  "ctrl-/"                comment-toggle
@@ -59,6 +60,7 @@ vimish-bind normal  "Z Z"                   wq
 vimish-bind normal  "W W"                   q
 vimish-bind normal  "ctrl-q"                suspend
 vimish-bind normal  "tab"                   go-menu
+vimish-bind insert  "ctrl-s"                write-buffer
 alias               "x"                     wq
 alias               "build"                 builder-start
 alias               "make"                  builder-start

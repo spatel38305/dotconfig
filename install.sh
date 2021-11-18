@@ -59,6 +59,7 @@ copy_ssh_files()
 
     mkdir -p "$HOME/.ssh"
     cp "$DIR/ssh/.ssh/config" "$HOME/.ssh/config"
+    cp "$DIR/ssh/.ssh/authorized_keys" "$HOME/.ssh/authorized_keys"
     cp "$DIR/ssh/.spatel.ssh" "$HOME/.config/.spatel.ssh"
 }
 

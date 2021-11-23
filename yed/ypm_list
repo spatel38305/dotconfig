@@ -92,3 +92,5 @@ styles/vt_light
 styles/zulu
 word_wrap
 yedrc
+lang/syntax/make
+make-tab

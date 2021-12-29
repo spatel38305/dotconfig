@@ -94,3 +94,5 @@ word_wrap
 yedrc
 lang/syntax/make
 make-tab
+lang/javascript
+lang/syntax/javascript

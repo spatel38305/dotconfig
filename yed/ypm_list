@@ -96,3 +96,10 @@ lang/syntax/make
 make-tab
 lang/javascript
 lang/syntax/javascript
+yule_2021
+lang/linker
+lang/syntax/linker
+mouse
+mouse_frame_control
+mouse_menu
+universal_clipboard

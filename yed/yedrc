@@ -47,6 +47,8 @@ vimish-bind normal  "ctrl-d"                multi buffer-delete buffer-next
 vimish-bind normal  "ctrl-s"                write-buffer
 vimish-bind normal  "ctrl-n"                command-prompt "buffer "
 vimish-bind normal  "ctrl-r"                redraw
+vimish-bind normal  "ctrl-j"                multi jump-stack-push ctags-jump-to-definition
+vimish-bind normal  "bsp"                   jump-stack-pop
 vimish-bind normal  "'"                     cursor-next-word
 vimish-bind normal  ";"                     cursor-prev-word
 vimish-bind normal  "1"                     cursor-buffer-begin

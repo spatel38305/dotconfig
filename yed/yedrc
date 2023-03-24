@@ -62,6 +62,7 @@ vimish-bind normal  "Z Z"                   wq
 vimish-bind normal  "W W"                   q
 vimish-bind normal  "ctrl-q"                suspend
 vimish-bind normal  "tab"                   go-menu
+vimish-bind normal  "m"                     builder-start
 vimish-bind insert  "ctrl-s"                write-buffer
 alias               "x"                     wq
 alias               "build"                 builder-start

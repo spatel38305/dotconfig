@@ -27,6 +27,7 @@ alias wcl="wc -l"
 alias bim="vim"
 alias cim="vim"
 alias ted="yed"
+alias ued="yed"
 
 alias cdd="cd ~/dotconfig"
 

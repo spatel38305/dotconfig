@@ -71,6 +71,7 @@ alias               "m"                     builder-start
 alias               "replace"               replace-current-search
 alias               "q!"                    no-confirm-quit
 alias               "ypm"                   ypm-menu
+alias               "qa"                    quit
 
 ### @project ###
 yedrc-load ".yedrc"
